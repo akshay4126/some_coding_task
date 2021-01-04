@@ -48,9 +48,10 @@ rivm_gql_service | Quit the server with CONTROL-C.
 ```
 ## Step 2: Checkout the RIVM GraphQL playground
 http://127.0.0.1:8000/graphql/
-Try hello Query
+Try a hello Query
+```
 { hello }
-
+```
 ## Step 3: Reset test database and load demo data
 #### Run these commands in a separate console terminal
 ```
