@@ -1,0 +1,28 @@
+type Indicator {
+  id: ID!
+  method: String!
+  category: String!
+  indicator: String!
+  unit: String!
+}
+
+type Entry {
+  id: ID!
+  productName: String!
+  geography: Geography!
+  unit: String!
+  quantity: Float!
+  impact(indicatorID: ID!): Impact!
+}
+
+type Impact {
+  id: ID!
+  indicator: Indicator!
+  entry: Entry!
+  coefficient: Float!
+}
+
+type Geography {
+  shortName: String!
+  name: String!
+}

@@ -1,0 +1,42 @@
+[
+  {
+    "model": "impacts.Geography",
+    "pk": "NL",
+    "fields": {
+      "short_name": "NLD",
+      "name": "The Netherlands"
+    }
+  },
+  {
+    "model": "impacts.Geography",
+    "pk": "FR",
+    "fields": {
+      "short_name": "FR",
+      "name": "France"
+    }
+  },
+  {
+    "model": "impacts.Geography",
+    "pk": "USA",
+    "fields": {
+      "short_name": "USA",
+      "name": "United States of America"
+    }
+  },
+  {
+    "model": "impacts.Geography",
+    "pk": "IN",
+    "fields": {
+      "short_name": "IND",
+      "name": "India"
+    }
+  },
+  {
+    "model": "impacts.Geography",
+    "pk": "EU",
+    "fields": {
+      "short_name": "EUR",
+      "name": "European Union"
+    }
+  }
+]

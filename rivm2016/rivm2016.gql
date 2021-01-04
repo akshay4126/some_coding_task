@@ -1,0 +1,11 @@
+type Query {
+  hello: String!
+
+  indicator(id: ID!): Indicator
+  indicators: [Indicator]
+
+  entry(id: ID!): Entry
+  entries: [Entry]
+
+  impact(entryID: ID!, indicatorID: ID!): Impact
+}

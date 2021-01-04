@@ -1,0 +1,66 @@
+[
+  {
+    "model": "impacts.Geography",
+    "pk": "NL",
+    "fields": {
+      "short_name": "NLD",
+      "name": "The Netherlands"
+    }
+  },
+  {
+    "model": "impacts.Geography",
+    "pk": "FR",
+    "fields": {
+      "short_name": "FR",
+      "name": "France"
+    }
+  },
+
+  {
+    "model": "impacts.Indicator",
+    "pk": 1,
+    "fields": {
+      "method": "cumulative energy demand",
+      "category": "biomass",
+      "indicator": "renewable energy resources, biomass",
+      "unit": "MJ-Eq"
+    }
+  },
+  {
+    "model": "impacts.Indicator",
+    "pk": 2,
+    "fields": {
+      "method": "IPCC 2013",
+      "category": "climate change",
+      "indicator": "GWP 100a",
+      "unit": "kg CO2-Eq"
+    }
+  },
+  {
+    "model": "impacts.Entry",
+    "pk": 1,
+    "fields": {
+      "product_name": "Test Entry Product",
+      "unit": "Test Entry unit",
+      "geography": "NL"
+    }
+  },
+  {
+    "model": "impacts.Impact",
+    "pk": 1,
+    "fields": {
+      "indicator": 1,
+      "entry": 1,
+      "coefficient": 0.1
+    }
+  },
+  {
+    "model": "impacts.Impact",
+    "pk": 2,
+    "fields": {
+      "indicator": 2,
+      "entry": 1,
+      "coefficient": 0.2
+    }
+  }
+]
