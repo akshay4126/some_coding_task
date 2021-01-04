@@ -6,9 +6,9 @@ services:
   web:
     build: .
     command: bash -c "python manage.py makemigrations && python manage.py migrate && python manage.py runserver 0.0.0.0:8000"
-    container_name: rivm_gql_service
+    container_name: metabolic
     volumes:
-      - .:/rivm_gql_service
+      - .:/metabolic
     ports:
       - "8000:8000"
     depends_on:
@@ -18,7 +18,7 @@ services:
     build: .
     command: celery -A rivm2016 worker -l info
     volumes:
-      - .:/rivm_gql_service
+      - .:/metabolic
     depends_on:
       - redis
 
@@ -26,6 +26,6 @@ services:
     build: .
     command: celery -A rivm2016 beat -l info
     volumes:
-      - .:/rivm_gql_service
+      - .:/metabolic
     depends_on:
       - redis

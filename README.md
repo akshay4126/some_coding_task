@@ -42,9 +42,9 @@ After a successful 'docker-compose up', you should see following on the console
 .
 .
 .
-rivm_gql_service | Django version 3.1.4, using settings 'rivm2016.settings'
-rivm_gql_service | Starting development server at http://0.0.0.0:8000/
-rivm_gql_service | Quit the server with CONTROL-C.
+metabolic | Django version 3.1.4, using settings 'rivm2016.settings'
+metabolic | Starting development server at http://0.0.0.0:8000/
+metabolic | Quit the server with CONTROL-C.
 ```
 ## Step 2: Checkout the RIVM GraphQL playground
 http://127.0.0.1:8000/graphql/
@@ -57,13 +57,13 @@ Try a hello Query
 ```
 
 # Clean & reset database: deletes migrations, db.sqlite3; runs migrations; loads seed data
-(shell)$ docker-compose run web python /rivm_gql_service/scripts/clean_and_reset_db.py
+(shell)$ docker-compose run web python /metabolic/scripts/clean_and_reset_db.py
 
 # (Optional) To load seed & sample data separately, in json format
 (shell)$ docker-compose exec web python manage.py loaddata data/seeds.json
 
 # Import Indicators and Impacts data from sample csv file
-(shell)$ docker-compose exec web python manage.py rivm_load_from_csv /rivm_gql_service/data/rivm2016.csv
+(shell)$ docker-compose exec web python manage.py rivm_load_from_csv /metabolic/data/rivm2016.csv
 
 ```
 

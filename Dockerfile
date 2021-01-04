@@ -10,15 +10,15 @@ ENV DJANGO_ENV dev
 ENV DOCKER_CONTAINER 1
 
 # create root directory for - RIVM GraphQL Service
-RUN mkdir /rivm_gql_service
+RUN mkdir /metabolic
 
-# COPY the contents for this Django project into the container at /rivm_gql_service
-COPY . /rivm_gql_service/
+# COPY the contents for this Django project into the container at /metabolic
+COPY . /metabolic/
 
-# Set the working directory to /rivm_gql_service
-WORKDIR /rivm_gql_service
+# Set the working directory to /metabolic
+WORKDIR /metabolic
 
 # Install python packages specified in requirements.txt
-RUN pip install -r /rivm_gql_service/requirements.txt
+RUN pip install -r /metabolic/requirements.txt
 
 EXPOSE 8000
