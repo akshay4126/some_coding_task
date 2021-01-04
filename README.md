@@ -46,8 +46,10 @@ rivm_gql_service | Django version 3.1.4, using settings 'rivm2016.settings'
 rivm_gql_service | Starting development server at http://0.0.0.0:8000/
 rivm_gql_service | Quit the server with CONTROL-C.
 ```
-## Step 2: Checkout RIVM GraphQL playground
+## Step 2: Checkout the RIVM GraphQL playground
 http://127.0.0.1:8000/graphql/
+Try hello Query
+{ hello }
 
 ## Step 3: Reset test database and load demo data
 #### Run these commands in a separate console terminal
