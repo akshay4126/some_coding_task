@@ -1,4 +1,4 @@
-# RIVM GraphQL Service Demo
+# GraphQL Service Demo
 
 ## Demo code: Key files and frameworks
 ```
